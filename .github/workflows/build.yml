@@ -31,7 +31,7 @@ jobs:
           pyinstaller --onefile --windowed --name=TodoApp your_script_name.py
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Используем v4
         with:
           name: TodoApp-MacOS
           path: dist/TodoApp  # Путь к собранному файлу
