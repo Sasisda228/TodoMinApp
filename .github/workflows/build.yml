@@ -3,10 +3,10 @@ name: Build Python Project for macOS
 on:
   push:
     branches:
-      - main  # Запускать сборку при пуше в ветку main
+      - master  # Запускать сборку при пуше в ветку main
   pull_request:
     branches:
-      - main  # Запускать сборку при создании PR в ветку main
+      - master  # Запускать сборку при создании PR в ветку main
 
 jobs:
   build:
