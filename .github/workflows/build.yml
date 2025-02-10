@@ -28,7 +28,7 @@ jobs:
 
       - name: Build executable
         run: |
-          pyinstaller --onefile --windowed --name=TodoApp your_script_name.py
+          pyinstaller --onefile --windowed --name=TodoApp main.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4  # Используем v4
